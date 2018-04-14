@@ -7,8 +7,8 @@
 char auth[] = "95abdd251dbb4e519f6782cc89fbc1f2";
 
 // WiFi credentials
-char ssid[] = "Guest";
-char pass[] = "gastennetwerk";
+char ssid[] = "May_The_Wifi_Be_With_You";
+char pass[] = "Luke_Im_Your_Father";
 
 #define PIN 0
 #define NUM_LEDS 60
@@ -127,10 +127,10 @@ void loop()
 			setAll(r, g, b, 0);
 			break;
 		case 1:
-			KITTPulse(r, g, b, 0, 5, 10, 25); // r, g, b, w, movelenght, speed, delay
+			KITTPulse(r, g, b, 0, 5, 25, 25); // r, g, b, w, movelenght, speed, delay
 			break;
 		case 2:
-			randomPositionLights(r, g, b, 0, 20);
+			randomPositionLights(r, g, b, 0, 20); // r, g, b, w, delay
 			break;
 		case 3:
 			rainbowLoops(1, 5); // loops, delay
@@ -139,7 +139,7 @@ void loop()
 			meteorRain(r, g, b, 0, 1, 48, true, 50); // r, g, b, w, meteor size, trail decay speed, random trail decay bool, delay
 			break;
 		case 5:
-			crawlingLightsRainbow(1, 8, 75); // loops, crawl, delay
+			crawlingLightsRainbow(1, 4, 75); // loops, crawl, delay
 			break;
 		case 6:
 			LightUpOutsideIn(r, g, b, 0, 50);
@@ -161,7 +161,7 @@ void loop()
 			RandomPositionRandomColor(25); // delay
 			break;
 		case 11:
-			ripple(false);
+			ripple(false); // background
 			break;
 		case 12:
 			meteorRainbow(5, 64, false, 25); // meteor size, trail decay speed, random trial decay bool, delay

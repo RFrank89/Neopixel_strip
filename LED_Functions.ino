@@ -514,6 +514,7 @@ void racingLightsReverse(uint8_t red, uint8_t green, uint8_t blue, uint8_t white
 }
 
 // Lights racing inspired by the shuttle run
+// ARDUINO ONLY !!!
 void shuttleRun(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint8_t loops, float increase, uint8_t wait)
 {
 	for (int runs = 1; runs <= loops; runs++)
@@ -810,7 +811,7 @@ void RandomPositionRandomColor(uint8_t wait)
 }
 
 // bouncing lights
-// ARDUINO ONLY !!!!
+// ARDUINO ONLY !!!
 void BouncingLights(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, int balls)
 {
 	float gravity = -9.81;
@@ -908,6 +909,7 @@ void BouncingLightsColors(int balls)
 }
 
 // Fire simulated
+// ARDUINO ONLY !!!
 void Fire(int cooling, int sparkling, int wait)
 {
 	static byte heat[NUM_LEDS];
@@ -1098,6 +1100,7 @@ void meteorRainbow(uint8_t meteorSize, uint8_t meteorTrailDecay, boolean meteorR
 }
 
 // Lights racing inspired by the shuttle run
+// ARDUINO ONLY !!!
 void shuttleRunRainbow(uint8_t loops, float increase, uint8_t wait)
 {
 	for (int j = 0; j < loops; j++)
